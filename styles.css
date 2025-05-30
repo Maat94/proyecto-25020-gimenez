@@ -1,0 +1,690 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+body {
+  font-family: 'Roboto';
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+/* HEADER STYLES */
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  color: #0483ba;
+  margin-right: 8px;
+  font-size: 2.5rem;
+}
+
+.menu {
+  color: #0483ba;
+  font-size: 1.7rem;
+}
+
+.titulo-principal {
+  color: #0483ba;
+
+  & span {
+    color: white;
+  }
+  & a {
+    text-decoration: none;
+  }
+  & a:visited {
+    color: #0483ba;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background-color: #090909f5;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1999;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40%;
+
+  & li {
+    list-style: none;
+    padding: 0 20px;
+  }
+
+  & a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: 0.3s ease;
+  }
+
+  & a:hover {
+    color: #0483ba;
+  }
+}
+
+/* MAIN STYLES */
+
+/* HERO STLES */
+
+.hero {
+  background-image: url(/Images/hero.jpg);
+  height: 95vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 5% center;
+  padding: 0 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+
+  & h3 {
+    color: #0483ba;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  & h2 {
+    color: white;
+    font-size: 3.4rem;
+    text-shadow: 1px 1px #000000;
+  }
+
+  & h4 {
+    color: #0483ba;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  & .hero-content {
+    margin-top: 135px;
+  }
+
+  & button {
+    margin-top: 15px;
+    border: none;
+    padding: 10px 10px;
+    color: white;
+    background-color: #0483ba;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.4s ease;
+  }
+
+  & button:hover {
+    background-color: #005072;
+  }
+}
+
+/* SECTIONS STYLES */
+
+.secondary-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: white;
+  font-size: 1.3rem;
+  width: 100%;
+  background-color: #090909f5;
+  height: 16vh;
+  box-shadow: 0 2px 8px -2px #0483ba;
+
+  & span {
+    color: #0483ba;
+  }
+}
+
+.line-break {
+  border-bottom: solid 1px #0483ba;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sections {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  & h3 {
+    z-index: 1200;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
+    transition: font-size 0.5s ease;
+  }
+
+  & .apple {
+    background-image: url(/Images/apple3.jpg);
+    height: 35vh;
+    width: 30vw;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    background-position: center;
+    cursor: pointer;
+    transition: height 0.5s ease, width 0.5s ease;
+  }
+  & .apple:hover {
+    height: 40vh;
+    width: 35vw;
+
+    & h3 {
+      font-size: 2rem;
+    }
+  }
+
+  .samsung {
+    background-image: url(/Images/samsung3.jpg);
+    height: 35vh;
+    width: 30vw;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.5s ease, width 0.5s ease;
+  }
+
+  & .samsung:hover {
+    height: 40vh;
+    width: 35vw;
+
+    & h3 {
+      font-size: 2rem;
+    }
+  }
+
+  .motorola {
+    background-image: url(/Images/motorola.webp);
+    height: 35vh;
+    width: 30vw;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.5s ease, width 0.5s ease;
+  }
+
+  .motorola:hover {
+    height: 40vh;
+    width: 35vw;
+
+    & h3 {
+      font-size: 2rem;
+    }
+  }
+
+  .xiaomi {
+    background-image: url(/Images/xiaomi.webp);
+    height: 35vh;
+    width: 30vw;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.5s ease, width 0.5s ease;
+  }
+
+  .xiaomi:hover {
+    height: 40vh;
+    width: 35vw;
+
+    & h3 {
+      font-size: 2rem;
+    }
+  }
+}
+
+/* FORM STYLES */
+
+.form-container {
+  max-width: 340px;
+  min-width: 300px;
+  height: 390px;
+  min-height: 390px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  margin: 20px auto;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto';
+  border: 1.5px solid #0483ba;
+  border-radius: 5px;
+}
+
+.form h2 {
+  text-align: center;
+  color: #0483ba;
+  font-size: 1.4rem;
+}
+
+.form p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  color: #0483ba;
+  font-weight: 700;
+}
+
+.form label {
+  padding: 4px;
+}
+
+.form input {
+  background-color: transparent;
+  font-size: 0.8rem;
+  font-family: 'Roboto';
+  padding: 5px;
+  border: 0.5px solid #0483ba;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.form input::placeholder {
+  color: #0483ba;
+}
+
+.form textarea {
+  margin-bottom: 20px;
+  background-color: transparent;
+  width: 100%;
+  border: 0.5px solid #0483ba;
+  border-radius: 5px;
+  font-family: 'Roboto';
+  padding: 5px;
+  font-size: 0.7rem;
+}
+
+.form textarea::placeholder {
+  color: #0483ba;
+}
+
+.button {
+  margin: 0px auto;
+  display: block;
+  color: white;
+  background-color: #0483ba;
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: #005072;
+  transition: 0.2s;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  box-shadow: 0 0 2px 1px #0483ba;
+  background-color: #090909f5;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  margin: auto;
+  height: 25vh;
+  width: 100%;
+  padding: 5px;
+  border-top: 0.5px solid black;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer p {
+  color: rgb(255, 255, 255);
+}
+
+.left-side {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & a:hover {
+    color: #0483ba;
+    transition: 0.3s ease;
+  }
+
+  & a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bolder;
+  }
+
+  & li {
+    margin: 18px;
+    list-style: none;
+  }
+}
+
+.footer-title {
+  color: white;
+  font-weight: bolder;
+}
+
+.right-side {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.redes p {
+  margin-right: 5px;
+  display: inline;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+.redes li {
+  margin: 10px;
+  list-style: none;
+}
+
+.fa-brands {
+  color: #0483ba;
+}
+
+.redes p:hover {
+  color: #0483ba;
+  transition: 0.3s ease;
+}
+
+/* ----------------------------------- BREAKPOINTS ----------------------------------- */
+
+/* -------------------- TABLET STYLES -------------------- */
+
+@media (max-width: 992px) {
+  /* HEADER STYLES*/
+
+  .titulo-principal {
+    font-size: 1.2rem;
+  }
+
+  .navbar {
+    margin-right: 20%;
+
+    & a {
+      font-size: 15px;
+    }
+
+    & li {
+      padding: 0 8px;
+    }
+  }
+
+  /* HERO STYLES */
+
+  .hero {
+    background-position: bottom;
+    & h2 {
+      font-size: 2.7rem;
+      text-shadow: 2px 2px black;
+    }
+
+    & .hero-content {
+      margin-top: 100px;
+      margin-left: 0px;
+    }
+
+    & h3 {
+      font-size: 1.3rem;
+    }
+
+    & h4 {
+      font-size: 1rem;
+    }
+  }
+
+  /* SECTIONS STYLES */
+
+  .secondary-title {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    height: 12vh;
+  }
+
+  .sections {
+    & h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/* -------------------- MOBILE STYLES -------------------- */
+
+/* HEADER STYLES */
+
+@media (max-width: 576px) {
+  .titulo-principal {
+    font-size: 0.9rem;
+  }
+  .icon {
+    font-size: 1.8rem;
+  }
+
+  .navbar {
+    margin-right: 12%;
+    & li {
+      padding: 0 12px;
+    }
+
+    & a {
+      font-size: 12px;
+    }
+  }
+
+  .menu {
+    font-size: 1.4rem;
+  }
+
+  /* SECTIONS STYLES */
+
+  .secondary-title {
+    margin: 0 auto;
+    font-size: 0.9rem;
+    height: 9vh;
+  }
+
+  .sections {
+    & h3 {
+      font-size: 1.2rem;
+    }
+  }
+
+  /* FORM STYLES */
+
+  .form-container {
+    max-width: 320px;
+    min-width: 280px;
+  }
+
+  .form h2 {
+    font-size: 1.2rem;
+  }
+
+  .form p {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .form input {
+    font-size: 0.7rem;
+  }
+
+  .form textarea {
+    font-size: 0.7rem;
+  }
+
+  .button {
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
+  /* FOOTER STYLES */
+
+  footer {
+    box-shadow: 0 0 2px 1px #0483ba;
+    background-color: #090909f5;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    margin: auto;
+    height: 25vh;
+    width: 100%;
+    padding: 5px;
+    border-top: 0.5px solid black;
+  }
+
+  footer a {
+    text-decoration: none;
+  }
+
+  footer p {
+    color: rgb(255, 255, 255);
+  }
+
+  .left-side {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    & a:hover {
+      color: #0483ba;
+      transition: 0.3s ease;
+    }
+
+    & a {
+      padding: 0px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: bolder;
+    }
+
+    & li {
+      list-style: none;
+      font-size: 0.8rem;
+    }
+  }
+
+  .footer-title {
+    color: white;
+    font-weight: bolder;
+    font-size: 0.9rem;
+  }
+
+  .right-side {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .redes {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .redes p {
+    margin-right: 5px;
+    display: inline;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bolder;
+  }
+
+  .redes li {
+    list-style: none;
+  }
+
+  .fa-brands {
+    color: #0483ba;
+  }
+
+  .redes p:hover {
+    color: #0483ba;
+    transition: 0.3s ease;
+  }
+
+  /* -------------------- IPHONE STYLES -------------------- */
+
+  .navbar {
+    margin-left: 7%;
+    margin-right: 10%;
+    & li {
+      padding: 0 12px;
+    }
+
+    & a {
+      font-size: 11px;
+    }
+  }
+}
