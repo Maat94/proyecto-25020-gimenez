@@ -175,7 +175,7 @@ body {
   }
 
   & .apple {
-    background-image: url(/Images/apple3.jpg);
+    background-image: url(Images/apple3.jpg);
     height: 35vh;
     width: 30vw;
     background-size: cover;
@@ -198,7 +198,7 @@ body {
   }
 
   .samsung {
-    background-image: url(/Images/samsung3.jpg);
+    background-image: url(Images/samsung3.jpg);
     height: 35vh;
     width: 30vw;
     background-size: cover;
@@ -222,7 +222,7 @@ body {
   }
 
   .motorola {
-    background-image: url(/Images/motorola.webp);
+    background-image: url(Images/motorola.webp);
     height: 35vh;
     width: 30vw;
     background-size: cover;
@@ -245,7 +245,7 @@ body {
   }
 
   .xiaomi {
-    background-image: url(/Images/xiaomi.webp);
+    background-image: url(Images/xiaomi.webp);
     height: 35vh;
     width: 30vw;
     background-size: cover;
